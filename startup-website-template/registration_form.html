@@ -46,7 +46,7 @@
         input[type="text"],
         input[type="email"],
         select {
-            width: 100%;
+            width: 90%;
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ddd;
@@ -90,7 +90,7 @@
 </head>
 <body>
     <form action="/submit_registration" method="POST">
-        <h1>Registration</h1> <!-- Heading placed inside the form -->
+        <h1>Apply for Certification Programs</h1> <!-- Heading placed inside the form -->
         <input type="hidden" name="certification_type" id="certification_type">
 
         <label for="full_name">Full Name:</label>
@@ -105,59 +105,44 @@
         <label for="course">Select Course:</label>
         <select name="course" id="course" required>
             <option value="">Select a course</option>
+            
+            <!-- Network Security Specialist -->
+            <option value="Network Security Fundamentals">Network Security Fundamentals</option>
+            <option value="Advanced Network Security">Advanced Network Security</option>
+            <option value="Cyber Threat Intelligence">Cyber Threat Intelligence</option>
+
+            <!-- Data Center Specialist -->
+            <option value="Data Center Design">Data Center Design</option>
+            <option value="Data Center Operations">Data Center Operations</option>
+            <option value="Cloud Data Center Management">Cloud Data Center Management</option>
+
+            <!-- NOC Engineer -->
+            <option value="Network Operations Monitoring">Network Operations Monitoring</option>
+            <option value="Incident Management">Incident Management</option>
+            <option value="NOC Troubleshooting Techniques">NOC Troubleshooting Techniques</option>
+
+            <!-- Network Expert -->
+            <option value="Advanced Network Management">Advanced Network Management</option>
+            <option value="Network Troubleshooting">Network Troubleshooting</option>
+            <option value="Network Security Expert">Network Security Expert</option>
+
+            <!-- Cloud Computing Expert -->
+            <option value="Cloud Computing Architecture">Cloud Computing Architecture</option>
+            <option value="Cloud Security Management">Cloud Security Management</option>
+            <option value="Cloud Deployment Strategies">Cloud Deployment Strategies</option>
+
+            <!-- IT Support and Service Management -->
+            <option value="ITIL Foundations">ITIL Foundations</option>
+            <option value="Service Desk Management">Service Desk Management</option>
+            <option value="End-User Support">End-User Support</option>
+
+            <!-- Server and Storage Management -->
+            <option value="Server Architecture and Management">Server Architecture and Management</option>
+            <option value="Storage Virtualization">Storage Virtualization</option>
+            <option value="Enterprise Backup Strategies">Enterprise Backup Strategies</option>
         </select>
 
         <button type="submit">Register</button>
     </form>
-
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const certificationType = urlParams.get('certification');
-        document.getElementById('certification_type').value = certificationType;
-
-        function updateCourseDropdown(certificationType) {
-            const courseDropdown = document.getElementById('course');
-            let options = [];
-
-            if (certificationType) {
-                const courses = {
-                    "network_security_specialist": [
-                        "Network Security Fundamentals",
-                        "Advanced Network Security",
-                        "Cyber Threat Intelligence"
-                    ],
-                    "data_center_specialist": [
-                        "Data Center Design",
-                        "Data Center Operations",
-                        "Cloud Data Center Management"
-                    ],
-                    "noc_engineer": [
-                        "Network Operations Monitoring",
-                        "Incident Management",
-                        "NOC Troubleshooting Techniques"
-                    ],
-                    "network_expert": [
-                        "Advanced Network Management",
-                        "Network Troubleshooting",
-                        "Network Security Expert"
-                    ]
-                };
-
-                courseDropdown.innerHTML = '<option value="">Select a course</option>';
-
-                if (courses[certificationType]) {
-                    courses[certificationType].forEach(course => {
-                        const option = document.createElement('option');
-                        option.value = course;
-                        option.textContent = course;
-                        options.push(option);
-                    });
-                    options.forEach(option => courseDropdown.appendChild(option));
-                }
-            }
-        }
-
-        updateCourseDropdown(certificationType);
-    </script>
 </body>
 </html>
