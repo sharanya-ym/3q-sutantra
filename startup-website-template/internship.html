@@ -1,266 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3Q Internship</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/lucide-icons@0.1.0/dist/lucide.min.css" rel="stylesheet">
-      <!-- Favicon -->
-      <link href="img/favicon.ico" rel="icon">
+    <meta charset="utf-8">
+    <title>3Q SUTANTRA - Internship Program</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Internship Program, IT Training, Career Development" name="keywords">
+    <meta content="3Q SUTANTRA Internship Program - Empowering students with real-world IT experience" name="description">
 
-      <!-- Google Web Fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-      <!-- Icon Font Stylesheet -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-  
-      <!-- Libraries Stylesheet -->
-      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-      <link href="lib/animate/animate.min.css" rel="stylesheet">
-  
-      <!-- Customized Bootstrap Stylesheet -->
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-  
-      <!-- Template Stylesheet -->
-      <link href="css/style.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-br from-blue-100 via-white to-green-50">
-  
-  <!-- Topbar Start -->
-  <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-    <div class="row gx-0">
-        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-            <div class="d-inline-flex align-items-center" style="height: 45px;">
-                <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Vijayanagara,Bengaluru</small>
-                <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
-                <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Vijayanagara,Bengaluru</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+9148402398</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@3qsutantra.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://in.linkedin.com/company/3q-sutantra"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/3qsutantra/"><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="http://www.youtube.com/@3QSutantra"><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
             </div>
         </div>
-        <div class="col-lg-4 text-center text-lg-end">
-            <div class="d-inline-flex align-items-center" style="height: 45px;">
-                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img src="img/3Q-Sutantra-Logo-scaled.jpg" alt="3Q Logo" style="height: 80px; margin-right: 10px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="team.html" class="nav-item nav-link">Leadership team</a>
+                    <a href="service.html" class="nav-item nav-link">Corporate Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">3Q Academy</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="3qAcademy.html" class="dropdown-item">3Q Academy</a>
+                            <a href="index.html#certification" class="dropdown-item">Global Certification Program</a>
+                            <a href="internship.html" class="dropdown-item">Internship</a>
+                            <a href="faculty.html" class="dropdown-item">Faculty and Student Development</a>
+                            <a href="hackathon.html" class="dropdown-item">Hackathon/Techkathon</a>
+                        </div>
+                    </div>
+                    <a href="projects.html" class="nav-item nav-link">3Q Projects</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Internship Program</h1>
+                    <a href="index.html" class="h5 text-white">Home</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="" class="h5 text-white">Internship</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Topbar End -->
+    <!-- Navbar End -->
 
-  <!-- Navbar -->
-  <nav class=" top-10 w-full bg-white/80 backdrop-blur-sm z-50 border-b border-blue-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
-      <div class="flex items-center space-x-2">
-        <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">
-          <i class="lucide lucide-code w-4 h-4 text-white"></i>
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text">3Q Internship</div>
-      </div>
-      <div class="hidden md:flex space-x-1">
-        <!-- <button class="rounded-full text-gray-600 hover:text-blue-600">Features &nbsp;</button> -->
-        <a href="index.html" class="rounded-full text-gray-600 hover:text-blue-600">Home &nbsp;</button>
-        <!-- <button class="rounded-full text-gray-600 hover:text-blue-600">Pricing &nbsp;</button> -->
-        <a href="about.html" class="rounded-full text-gray-600 hover:text-blue-600">About &nbsp;</a>
-        <a href="contact.html" class="rounded-full text-gray-600 hover:text-blue-600">Contact </a>
-      </div>
-      <div class="flex space-x-2">
-        <button class="rounded-full"><a href="admin_login.html">Admin Login &nbsp;</a></button>
-        <button class="rounded-full"><a href="user_login.html">User Login</a></button>
-      </div>
     </div>
-  </nav>
+    <!-- Full Screen Search End -->
 
-  <!-- Hero Section -->
-  <div class="pt-32 pb-16 px-4 relative overflow-hidden">
-    <div class="absolute top-40 right-0 w-64 h-64 bg-blue-400 rounded-full opacity-10 -z-10 blur-3xl"></div>
-    <div class="absolute bottom-20 left-10 w-72 h-72 bg-green-400 rounded-full opacity-10 -z-10 blur-3xl"></div>
-    
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
-      <div class="md:w-1/2 text-left space-y-6">
-        <h1 class="text-5xl md:text-6xl font-bold text-gray-900">
-          <span class="block">Find Your</span>
-          <span class="bg-gradient-to-r from-blue-600 to-green-500 text-transparent bg-clip-text">Dream Internship</span>
-        </h1>
-        <p class="text-xl text-gray-600 max-w-xl">
-          Our Internship Portal connects you with top companies offering exciting internship opportunities.
-        </p>
-        <div class="flex space-x-4 pt-4">
-          <button class="rounded-full"><a href="admin_login.html">Admin Login &nbsp;</a></button>
-        <button class="rounded-full"><a href="user_login.html">User Login</a></button>
-        </div>
-      </div>
-      <div class="md:w-1/2">
-        <div class="relative">
-          <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-green-400 rounded-2xl blur-xl opacity-20"></div>
-          <img 
-            src="/api/placeholder/600/400" 
-            alt="" 
-            class="rounded-2xl shadow-2xl relative w-full border border-gray-100" 
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Stats Section -->
-  <div class="bg-white py-10">
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-      <div class="space-y-2">
-        <p class="text-4xl font-bold text-blue-600">98%</p>
-        <p class="text-gray-600">Placement Rate</p>
-      </div>
-      <div class="space-y-2">
-        <p class="text-4xl font-bold text-green-600">10k+</p>
-        <p class="text-gray-600">Internships Listed</p>
-      </div>
-      <div class="space-y-2">
-        <p class="text-4xl font-bold text-purple-600">24/7</p>
-        <p class="text-gray-600">Support Available</p>
-      </div>
-      <div class="space-y-2">
-        <p class="text-4xl font-bold text-orange-600">500+</p>
-        <p class="text-gray-600">Companies</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Feature Highlights -->
-  <div class="max-w-7xl mx-auto px-4 py-16">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Portal?</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">We provide the best tools and resources to help you land your ideal internship.</p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="group">
-        <div class="p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-md group-hover:shadow-xl transition-all duration-300 border border-blue-100 h-full">
-          <!-- <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform"> -->
-            <!-- <i class="lucide lucide-rocket w-7 h-7 text-white"></i> -->
-          <!-- </div> -->
-          <h3 class="text-xl font-semibold mb-3 text-gray-900">Fast & Efficient</h3>
-          <p class="text-gray-600">Quickly find and apply to internships that match your skills and interests.</p>
-        </div>
-      </div>
-      <div class="group mt-8 md:mt-0">
-        <div class="p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-md group-hover:shadow-xl transition-all duration-300 border border-green-100 h-full">
-          <!-- <div class="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform"> -->
-            <!-- <i class="lucide lucide-shield-check w-7 h-7 text-white"></i> -->
-          <!-- </div> -->
-          <h3 class="text-xl font-semibold mb-3 text-gray-900">Verified Listings</h3>
-          <p class="text-gray-600">All internships are verified to ensure they meet our quality standards.</p>
-        </div>
-      </div>
-      <div class="group mt-8 md:mt-0">
-        <div class="p-8 bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl shadow-md group-hover:shadow-xl transition-all duration-300 border border-purple-100 h-full">
-          <!-- <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform"> -->
-            <!-- <i class="lucide lucide-users w-7 h-7 text-white"></i> -->
-          <!-- </div> -->
-          <h3 class="text-xl font-semibold mb-3 text-gray-900">Seamless Application</h3>
-          <p class="text-gray-600">Apply to multiple internships with a single click and track your application status.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container">
-        <div class="row gx-5">
-            <!-- <div class="col-lg-4 col-md-6 footer-about"> -->
-                <!-- <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Startup</h1>
-                    </a> -->
-                    <!-- <p class="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                            <button class="btn btn-dark">Sign Up</button>
+    <!-- Hero Section Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">Internship Program</h5>
+                        <h1 class="mb-0">Find Your Dream Internship Opportunity</h1>
+                    </div>
+                    <p class="mb-4">Our Internship Portal connects talented students with leading companies offering exciting internship opportunities. We bridge the gap between academia and industry by providing real-world experience in the IT sector.</p>
+                    <div class="row g-0 mb-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Real-world Projects</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Industry Mentorship</h5>
                         </div>
-                    </form> -->
-                <!-- </div> -->
-            <!-- </div> -->
-            <div class="col-lg-8 col-md-6">
-                <div class="row gx-5">
-                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
-                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                            <h3 class="text-light mb-0">Get In Touch</h3>
-                        </div>
-                        <div class="d-flex mb-2">
-                            <i class="bi bi-geo-alt text-primary me-2"></i>
-                            <p class="mb-0">Vijayanagar,Bengaluru,Karnataka</p>
-                        </div>
-                        <div class="d-flex mb-2">
-                            <i class="bi bi-envelope-open text-primary me-2"></i>
-                            <p class="mb-0">info@example.com</p>
-                        </div>
-                        <div class="d-flex mb-2">
-                            <i class="bi bi-telephone text-primary me-2"></i>
-                            <p class="mb-0">+012 345 67890</p>
-                        </div>
-                        <div class="d-flex mt-4">
-                            <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                            <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                            <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Career Guidance</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Networking Opportunities</h5>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                            <h3 class="text-light mb-0">Quick Links</h3>
+                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
                         </div>
-                        <div class="link-animated d-flex flex-column justify-content-start">
-                            <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                            <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                            <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                            <a class="text-light mb-2" href="team.html"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                            <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                            <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Ready to start your journey?</h5>
+                            <h4 class="text-primary mb-0">+9148402398</h4>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                            <h3 class="text-light mb-0">Popular Links</h3>
+                    <a href="user_registration.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Apply Now</a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="position-relative h-100">
+                        <img class="w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/internship-hero.jpg" style="object-fit: cover;" alt="Internship">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Stats Section Start -->
+    <div class="container-fluid facts py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-primary"></i>
                         </div>
-                        <div class="link-animated d-flex flex-column justify-content-start">
-                            <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                            <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                            <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                            <a class="text-light mb-2" href="team.html"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                            <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                            <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Students Placed</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">500</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-primary mb-0">Success Rate</h5>
+                            <h1 class="mb-0" data-toggle="counter-up">98</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-award text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Partner Companies</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">50</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container-fluid text-white" style="background: #061429;">
-    <div class="container text-center">
-        <div class="row justify-content-end">
-            <div class="col-lg-8 col-md-6">
-                <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                    <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">3Q SUTANTRA</a>. All Rights Reserved. 
-        
-        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-        <!-- Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p> -->
+    <!-- Stats Section End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h5 class="section-title bg-white text-center text-primary px-3">Why Choose Our Internship Program</h5>
+                <h1 class="mb-5">Comprehensive Internship Solutions</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center p-4">
+                        <div class="service-icon">
+                            <i class="fa fa-rocket text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Fast & Efficient</h4>
+                        <p class="m-0">Quickly find and apply to internships that match your skills and interests with our streamlined process.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center p-4">
+                        <div class="service-icon">
+                            <i class="fa fa-shield-alt text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Verified Listings</h4>
+                        <p class="m-0">All internships are verified to ensure they meet our quality standards and provide valuable experience.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center p-4">
+                        <div class="service-icon">
+                            <i class="fa fa-users text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Seamless Application</h4>
+                        <p class="m-0">Apply to multiple internships with a single click and track your application status in real-time.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Footer End -->
+    <!-- Features End -->
 
+    <!-- Internship Categories Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h5 class="section-title bg-white text-center text-primary px-3">Internship Categories</h5>
+                <h1 class="mb-5">Explore Different Domains</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="text-center border-bottom p-4">
+                            <h5 class="mb-0">Software Development</h5>
+                            <small>Web, Mobile, Desktop Applications</small>
+                        </div>
+                        <div class="d-flex justify-content-center p-4">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="text-center border-bottom p-4">
+                            <h5 class="mb-0">Data Science & Analytics</h5>
+                            <small>Machine Learning, AI, Big Data</small>
+                        </div>
+                        <div class="d-flex justify-content-center p-4">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="text-center border-bottom p-4">
+                            <h5 class="mb-0">Cybersecurity</h5>
+                            <small>Network Security, Ethical Hacking</small>
+                        </div>
+                        <div class="d-flex justify-content-center p-4">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="text-center border-bottom p-4">
+                            <h5 class="mb-0">Cloud Computing</h5>
+                            <small>AWS, Azure, Google Cloud</small>
+                        </div>
+                        <div class="d-flex justify-content-center p-4">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Internship Categories End -->
+
+    <!-- CTA Section Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="bg-primary rounded p-5">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-6">
+                                <h1 class="text-white mb-3">Ready to Start Your Internship Journey?</h1>
+                                <p class="text-white mb-0">Join hundreds of students who have successfully launched their careers through our internship program.</p>
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <a href="user_registration.html" class="btn btn-lg btn-secondary rounded">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CTA Section End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">Vijayanagar,Bengaluru,Karnataka</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@3qsutantra.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+9148402398</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="https://in.linkedin.com/company/3q-sutantra"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://www.instagram.com/3qsutantra/"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="http://www.youtube.com/@3QSutantra"><i class="fab fa-youtube fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="team.html"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="3qAcademy.html"><i class="bi bi-arrow-right text-primary me-2"></i>3Q Academy</a>
+                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Popular Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="internship.html"><i class="bi bi-arrow-right text-primary me-2"></i>Internship</a>
+                                <a class="text-light mb-2" href="faculty.html"><i class="bi bi-arrow-right text-primary me-2"></i>Faculty Development</a>
+                                <a class="text-light mb-2" href="hackathon.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hackathon</a>
+                                <a class="text-light mb-2" href="projects.html"><i class="bi bi-arrow-right text-primary me-2"></i>3Q Projects</a>
+                                <a class="text-light mb-2" href="user_registration.html"><i class="bi bi-arrow-right text-primary me-2"></i>Student Registration</a>
+                                <a class="text-light" href="admin_login.html"><i class="bi bi-arrow-right text-primary me-2"></i>Admin Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">3Q SUTANTRA</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
-<<<<<<< HEAD
-</create_file>
-=======
-</create_file>
->>>>>>> 748850f88627cbbf6f0480be3d0e72d09892fd79
